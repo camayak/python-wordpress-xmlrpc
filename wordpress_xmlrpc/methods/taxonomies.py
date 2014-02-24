@@ -7,11 +7,12 @@ class GetTaxonomies(AuthenticatedMethod):
     Retrieve the list of available taxonomies for the blog.
 
     Parameters:
-        None
+        `filter`: optional `dict` of filters to match against the taxonomy objects.
 
     Returns: `list` of :class:`WordPressTaxonomy` instances.
     """
     method_name = 'wp.getTaxonomies'
+    optional_args = ('filter',)
     results_class = WordPressTaxonomy
 
 
