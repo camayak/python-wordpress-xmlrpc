@@ -187,7 +187,8 @@ class WordPressUser(WordPressBase):
         'id': 'user_id',
         'username': 'username',
         'password': 'password',
-        'roles': 'roles',
+        'role': 'role',  # for writing a role
+        'roles': 'roles',  # for reading roles
         'nickname': 'nickname',
         'url': 'url',
         'first_name': 'first_name',
